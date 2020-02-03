@@ -1,0 +1,13 @@
+<div
+	style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;"
+>
+	<h1>برنامج حساب إستهلاك اطباق</h1>
+	<h2>Login</h2>
+	<p><%= error %></p>
+	<form action="/users/login" method="post">
+		<input type="text" name="username" placeholder="Username" />
+		<input type="password" name="password" placeholder="Password" />
+		<button>Login</button>
+	</form>
+	<h3>Don't have an account? <a href="/users/register">Register now</a></h3>
+</div>

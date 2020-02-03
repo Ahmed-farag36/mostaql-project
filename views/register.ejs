@@ -1,0 +1,24 @@
+<div
+	style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;"
+>
+	<h1>برنامج حساب إستهلاك اطباق</h1>
+	<h2>Register</h2>
+	<p><%= error %></p>
+	<form action="/users/register" method="post">
+		<input type="text" name="username" placeholder="Username" />
+		<input type="password" name="password" placeholder="Password" />
+		<input
+			type="password"
+			name="confirmPassword"
+			placeholder="Confirm Password"
+		/>
+		<label>User account type</label>
+		<select name="role">
+			<option value="User">User</option>
+			<option value="Admin">Admin</option>
+			<option value="Manager">Manager</option>
+		</select>
+		<button>Register</button>
+	</form>
+	<h3>Have an account? <a href="/users/login">login</a></h3>
+</div>
