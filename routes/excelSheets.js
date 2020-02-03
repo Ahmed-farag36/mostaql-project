@@ -95,6 +95,7 @@ router.get("/consumption/meal/:mealId", async (req, res) => {
 
 // CONSUMPTION FOR ONE CATEGORY WITIN PERIOD
 router.get("/consumption/category/:categoryTitle", async (req, res) => {
+	console.log(`\nHERE\n`);
 	const response = await excelSheetsController.consumptionForOneCategory(
 		req.params.categoryTitle,
 		req.query.from,

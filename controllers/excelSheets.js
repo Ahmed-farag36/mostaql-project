@@ -146,7 +146,9 @@ const consumptionForOneCategory = async (category, from, to) => {
 	// loop records
 	// return await Promise.all(
 	const allIngredients = records.map(record => {
-		const meal = meals.find(meal => meal.titleInEnglish === record.title);
+		const meal = meals.find(
+			meal => meal.titleInEnglish.toLowerCase() === record.title.toLowerCase()
+		);
 		if (!meal) return null;
 		// loop ingredients
 		return meal.ingredients.map(ingredient => {
@@ -185,7 +187,9 @@ const totalConsumption = async (from, to) => {
 	const allIngredients = records
 		.map(record => {
 			// find meal by title
-			const meal = meals.find(meal => meal.titleInEnglish === record.title);
+			const meal = meals.find(
+				meal => meal.titleInEnglish.toLowerCase() === record.title.toLowerCase()
+			);
 			if (!meal) return null;
 			// loop meal ingredients
 			return meal.ingredients.map(ingredient => {

@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize");
 
 // DB connection settings /* CHANGE TO REAL DB */
-const sequelize = new Sequelize("mostaql", "ahmedfarag", "123456789", {
-	host: "db4free.net",
+const sequelize = new Sequelize("test", "ahmedfarag", "123456789", {
+	host: "34.65.158.4",
 	dialect: "mysql",
 	define: {
 		charset: "utf8",
