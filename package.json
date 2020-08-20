@@ -5,7 +5,7 @@
 	"homepage": "/app",
 	"dependencies": {
 		"array.prototype.flat": "^1.2.3",
-		"bcrypt": "^3.0.7",
+		"bcrypt": "^5.0.0",
 		"body-parser": "^1.19.0",
 		"convert-units": "^2.3.4",
 		"cookie-parser": "^1.4.4",
